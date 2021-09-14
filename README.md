@@ -154,3 +154,13 @@ Further, We will deliver the 64bit rivaGan model and test the performance on GPU
 Detail: [https://github.com/DAI-Lab/RivaGAN](https://github.com/DAI-Lab/RivaGAN)
 
 Zhang, Kevin Alex and Xu, Lei and Cuesta-Infante, Alfredo and Veeramachaneni, Kalyan. Robust Invisible Video Watermarking with Attention. MIT EECS, September 2019.[[PDF](https://arxiv.org/abs/1909.01285)]
+
+
+### Changelog
+ - Removed Rivagan because it was usin torch lib which was too big to be
+used in an EC2 instance
+ - Removed **torch** lib from setup.py
+ - Updated to use **opencv-python-headless** because it isn't GPU dependent
+
+ Run 'python3 setup.py install' to install libs
+ Run 'python3 app.py' to test. It should print **test**
